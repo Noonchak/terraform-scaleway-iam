@@ -1,4 +1,4 @@
-# group
+# iam-group
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -16,7 +16,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_group"></a> [group](#module\_group) | ../../modules/group | n/a |
+| <a name="module_group"></a> [group](#module\_group) | ../../modules/iam-group | n/a |
 
 ## Resources
 

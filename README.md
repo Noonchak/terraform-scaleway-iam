@@ -3,11 +3,11 @@
 
 ## Usage
 
-`group`:
+`iam-group`:
 
 ```hcl
-module "group" {
-  source = "../../modules/group"
+module "iam-group" {
+  source = "../../modules/iam-group"
 
   name        = "example"
   description = "description of example"
@@ -23,7 +23,7 @@ module "group" {
 
 ## Examples
 
-- [group](https://github.com/Noonchak/terraform-scaleway-iam/tree/main/examples/group) - Set Scaleway group
+- [iam-group](https://github.com/Noonchak/terraform-scaleway-iam/tree/main/examples/iam-group) - Set Scaleway IAM group
 
 
 ## Authors

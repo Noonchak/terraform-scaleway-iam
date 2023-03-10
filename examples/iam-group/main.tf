@@ -7,7 +7,7 @@ provider "scaleway" {
 # IAM Group
 ##############
 module "group" {
-  source = "../../modules/group"
+  source = "../../modules/iam-group"
 
   name        = "example"
   description = "description of example"
