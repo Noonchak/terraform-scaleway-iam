@@ -20,10 +20,26 @@ module "iam-group" {
 }
 ```
 
+`iam-policy`:
+
+```hcl
+module "iam-policy" {
+  source = "../../modules/iam-policy"
+
+  name        = "example"
+  description = "description of example"
+  group_id    = module.iam_group.id
+  rule = {
+    project_ids          = [data.scaleway_account_project.this.id]
+    permission_set_names = ["InstancesReadOnly"]
+  }
+}
+```
 
 ## Examples
 
 - [iam-group](https://github.com/Noonchak/terraform-scaleway-iam/tree/main/examples/iam-group) - Set Scaleway IAM group
+- [iam-policy](https://github.com/Noonchak/terraform-scaleway-iam/tree/main/examples/iam-policy) - Set Scaleway IAM policy
 
 
 ## Authors
